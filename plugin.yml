@@ -1,0 +1,50 @@
+name: WorldProtection
+main: roi611\worldprotection\Main
+version: 3.4.0
+api:
+- 4.0.0
+- 4.0.0-BETA1
+- 5.0.0
+- 5.0.0-ALPHA1
+load: POSTWORLD
+author: roi611
+description: ワールドの破壊や設置を制限します
+
+commands: 
+   worldbreak:
+      description: ワールドのブロックの破壊できなくします
+      usage: /worldbreak
+      permission: "worldprotection.command"
+   worldplace:
+      description: ワールドにブロックの設置をできなくします
+      usage: /worldplace
+      permission: "worldprotection.command"
+   canbreak:
+      description: 設置保護の例外を追加します
+      usage: /canbreak
+      permission: "worldprotection.command"
+   canplace:
+      description: 破壊保護の例外を追加します
+      usage: /canplace
+      permission: "worldprotection.command"
+   cantbreak:
+      description: 破壊保護していないときの例外を追加します
+      usage: /cantbreak
+      permission: "worldprotection.command"
+   cantplace:
+      description: 設置保護していないときの例外を追加します
+      usage: /cantplace
+      permission: "worldprotection.command"
+   cantuse:
+      description: 使うことができないブロックを追加します
+      usage: /cantuse
+      permission: "worldprotection.command"
+   world:
+      description: ワールドを移動します
+      permission: "worldteleport.command"
+
+permissions:
+   worldprotection.command:
+      default: op
+   worldteleport.command:
+      default: op
