@@ -24,6 +24,16 @@ use pocketmine\Server;
     
 class Main extends PluginBase implements Listener {
     
+    private $place;
+    private $idplace;
+    private $cantplace;
+    
+    private $break;
+    private $idbreak;
+    private $cantbreak;
+
+    private $cantuse;
+
     public function onEnable():void {
        
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
