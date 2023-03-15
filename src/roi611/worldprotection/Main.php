@@ -377,7 +377,7 @@ class Main extends PluginBase implements Listener {
 
         $player = $event->getPlayer();
         $world = $player->getWorld()->getFolderName();
-        $block = $event->getBlock();
+        $block = $event->getItem()->getBlock();
         $item = $block->getName();
 
         if($this->getServer()->isOp($player->getName()) === false){
